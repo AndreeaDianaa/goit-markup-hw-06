@@ -325,6 +325,37 @@
           </li>
         </ul>
       </div>
+
+      <form class="newsletter-form">
+        <div
+          class="newsletter-title"
+          role="group"
+          aria-labelledby="email-contact-head"
+        >
+          <p id="email-contact-head">Subscribe to the newsletter</p>
+        </div>
+        <div class="email-and-button-container">
+          <div class="email-container-footer-">
+            <label for="email">
+              <input
+                class="email-field"
+                type="email"
+                name="email"
+                id="email"
+                required
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                placeholder="E-mail"
+              />
+            </label>
+          </div>
+          <div class="button-container-footer">
+            <button type="submit" class="button-footer">
+              Subscribe
+              <svg><use href="./images/icons.svg#icon-send"></use></svg>
+            </button>
+          </div>
+        </div>
+      </form>
     </footer>
   </body>
 </html>

@@ -435,12 +435,132 @@
           </li>
         </ul>
       </div>
+      <form class="newsletter-form">
+        <div
+          class="newsletter-title"
+          role="group"
+          aria-labelledby="email-contact-head"
+        >
+          <p id="email-contact-head">Subscribe to the newsletter</p>
+        </div>
+        <div class="email-and-button-container">
+          <div class="email-container-footer-">
+            <label for="email">
+              <input
+                class="email-field"
+                type="email"
+                name="email"
+                id="email"
+                required
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                placeholder="E-mail"
+              />
+            </label>
+          </div>
+          <div class="button-container-footer">
+            <button type="submit" class="button-footer">
+              Subscribe
+              <svg><use href="./images/icons.svg#icon-send"></use></svg>
+            </button>
+          </div>
+        </div>
+      </form>
     </footer>
 
     <!-- MODAL -->
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
         <button class="close-btn" data-modal-close="">&times;</button>
+
+        <form class="contact-form">
+          <div
+            class="form-title"
+            role="group"
+            aria-labelledby="contact-details-head"
+          >
+            <p id="contact-details-head">
+              Leave your information and we'll call you back
+            </p>
+          </div>
+          <div class="name-container">
+            <label class="form-label" for="name">Name</label>
+            <div class="input-container">
+              <input
+                class="text-field"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+              <svg><use href="./images/icons.svg#icon-person"></use></svg>
+            </div>
+          </div>
+
+          <div class="tel-container">
+            <label class="form-label" for="phone-number">Telephone</label>
+            <div class="input-container">
+              <input
+                class="text-field"
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                required
+              />
+              <svg>
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="email-container">
+            <label class="form-label" for="email">Email</label>
+            <div class="input-container">
+              <input
+                class="text-field"
+                type="email"
+                name="email"
+                id="email"
+                required
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              />
+              <svg>
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="comments-container">
+            <label class="form-label" for="comments">Comments</label>
+            <textarea
+              name="comments"
+              id="comments"
+              placeholder="Enter the text"
+            ></textarea>
+          </div>
+          <div class="input-container terms-and-conditions-container">
+            <input
+              type="checkbox"
+              class="terms-and-conditions-check"
+              name="terms-and-conditions-check"
+              id="terms-and-conditions-check"
+              value="Checked"
+            />
+            <label
+              class="terms-and-conditions-label"
+              for="terms-and-conditions-check"
+            >
+              <svg class="icon-checkbox">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+              <span>
+                I agree with the letter and accept the
+                <a href="#">Terms and Conditions</a>
+              </span>
+            </label>
+          </div>
+          <div class="button-container-modal">
+            <button type="submit" class="button-modal">Send</button>
+          </div>
+        </form>
       </div>
     </div>
 
